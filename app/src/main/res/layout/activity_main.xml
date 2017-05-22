@@ -12,24 +12,26 @@
         android:src="@drawable/background"
         android:scaleType="centerCrop"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyRestuarants"
+        android:id="@+id/textView"
+        android:layout_marginTop="35dp"
+        android:textSize="40sp"
+        android:textColor="@color/colorTextIcons"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/findRestaurantsButton"
         android:text="Find Restaurants"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:background="@color/colorAccent"
         android:textColor="@color/colorTextIcons"
         android:layout_marginLeft="30dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MyRestuarants!"
-        android:id="@+id/textView"
-        android:layout_marginTop="35dp"
-        android:textColor="@color/colorTextIcons"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>
