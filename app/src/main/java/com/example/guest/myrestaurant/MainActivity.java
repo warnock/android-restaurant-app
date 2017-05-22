@@ -1,23 +1,29 @@
 package com.example.guest.myrestaurant;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button mFindRestaurantsButton;
     private EditText mLocationEditText;
+    private TextView mAppNameTextVeiw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mLocationEditText = (EditText) findViewById(R.id.locationEditText);
+        mAppNameTextVeiw = (TextView) findViewById(R.id.appNameTextView);
+        Typeface ostrichBoldFont = Typeface.createFromAsset(getAssets(), "fonts/ostrich-regular.ttf");
+        mAppNameTextVeiw.setTypeface(ostrichBoldFont);
         mFindRestaurantsButton = (Button) findViewById(R.id.findRestaurantsButton);
         mFindRestaurantsButton.setOnClickListener(new View.OnClickListener() {
             @Override
