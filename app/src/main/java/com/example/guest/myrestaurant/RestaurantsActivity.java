@@ -18,4 +18,3 @@ public class RestaurantsActivity extends AppCompatActivity {
         mLocationTextView.setText("Here are all the restaurants near: " + location);
     }
 }
-git
