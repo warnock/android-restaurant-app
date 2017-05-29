@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.guest.myrestaurant.MainActivity"
+    tools:context="com.example.guest.myrestaurant.ui.MainActivity"
     android:background="#000000">
     <ImageView
         android:layout_width="match_parent"
