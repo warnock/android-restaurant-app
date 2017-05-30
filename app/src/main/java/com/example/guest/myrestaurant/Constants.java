@@ -1,9 +1,5 @@
 package com.example.guest.myrestaurant;
 
-/**
- * Created by meganwarnock on 5/28/17.
- */
-
 public class Constants {
     public static final String YELP_CONSUMER_KEY = BuildConfig.YELP_CONSUMER_KEY;
     public static final String YELP_CONSUMER_SECRET = BuildConfig.YELP_CONSUMER_SECRET;
