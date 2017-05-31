@@ -1,4 +1,4 @@
-package com.example.guest.myrestaurant;
+package com.example.guest.myrestaurant.adapters;
 
 import android.content.Context;
 import android.widget.ArrayAdapter;

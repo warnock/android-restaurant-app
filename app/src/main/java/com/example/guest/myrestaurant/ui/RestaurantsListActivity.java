@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.guest.myrestaurant.R;
-import com.example.guest.myrestaurant.RestaurantListAdapter;
+import com.example.guest.myrestaurant.adapters.RestaurantListAdapter;
 import com.example.guest.myrestaurant.models.Restaurant;
 import com.example.guest.myrestaurant.services.YelpService;
 
