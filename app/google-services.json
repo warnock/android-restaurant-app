@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "787631557640",
+    "firebase_url": "https://bustle-clone-902c6.firebaseio.com",
+    "project_id": "bustle-clone-902c6",
+    "storage_bucket": "bustle-clone-902c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787631557640:android:f248acc6e748662f",
+        "android_client_info": {
+          "package_name": "com.example.guest.myrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787631557640-1h28r4c8pcqc05riashl6gngu7dgr0m2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.guest.myrestaurant",
+            "certificate_hash": "311db20f22974b71774c2942691d92adfb3c8c7d"
+          }
+        },
+        {
+          "client_id": "787631557640-battibbckbokr7l0chvfqvif8s06fo7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZO7TvBevYBiJUhq3uHgdgJ6p0dW94tpk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787631557640-battibbckbokr7l0chvfqvif8s06fo7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
