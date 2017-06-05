@@ -68,4 +68,5 @@ dependencies {
     annotationProcessor 'org.parceler:parceler:1.1.6'
     apply plugin: 'com.google.gms.google-services'
     compile 'com.google.firebase:firebase-database:9.2.1'
+    compile 'com.firebaseui:firebase-ui-database:0.4.1'
 }
