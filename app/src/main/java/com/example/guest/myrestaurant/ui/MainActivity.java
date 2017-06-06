@@ -26,13 +26,10 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-//    private SharedPreferences mSharedPreferences;
-//    private SharedPreferences.Editor mEditor;
     private DatabaseReference mSearchedLocationReference;
     private ValueEventListener mSearchedLocationReferenceListener;
 
     @Bind(R.id.findRestaurantsButton) Button mFindRestaurantsButton;
-    @Bind(R.id.locationEditText) EditText mLocationEditText;
     @Bind(R.id.appNameTextView) TextView mAppNameTextView;
     @Bind(R.id.savedRestaurantsButton) Button mSavedRestaurantsButton;
 
@@ -65,8 +62,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-//        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-//        mEditor = mSharedPreferences.edit();
 
         Typeface ostrichBoldFont = Typeface.createFromAsset(getAssets(), "fonts/ostrich-regular.ttf");
         mAppNameTextView.setTypeface(ostrichBoldFont);
@@ -80,13 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v == mFindRestaurantsButton) {
-            String location = mLocationEditText.getText().toString();
-//            if (!(location).equals("")) {
-//                addToSharedPreferences(location);
-//            }
-            saveLocationToFirebase(location);
             Intent intent = new Intent(MainActivity.this, RestaurantsListActivity.class);
-            intent.putExtra("location", location);
             startActivity(intent);
         }
         if (v == mSavedRestaurantsButton) {
@@ -105,8 +94,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mSearchedLocationReference.removeEventListener(mSearchedLocationReferenceListener);
     }
 
-
-//    private void  addToSharedPreferences(String location) {
-//        mEditor.putString(Constants.PREFERENCES_LOCATION_KEY, location).apply();
-//    }
 }
